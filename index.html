@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Geometry Challenge</title>
+<style type="text/css">
+    body {
+        background-color: black;
+        color: white;
+        text-align: center;
+    }
+    canvas {
+        width: 600px;
+        height: 400px;
+        display: block;
+        margin: 0 auto;
+        background-color: white;
+        border: 3 solid black;
+    }
+</style>
+</head>
+<body>
+    <h1>Geometry Challenge</h1>
+    <canvas id="myCanvas">
+    </canvas>
+<script>
+var canvas = document.getElementById("myCanvas");
+var ctx = canvas.getContext("2d");
+ctx.fillStyle = "#FF0000";
+ctx.fillRect(50,50,50,50);
+</script>
+</body>
+</html>

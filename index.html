@@ -9,24 +9,24 @@
         text-align: center;
     }
     canvas {
-        width: 600px;
-        height: 400px;
         display: block;
         margin: 0 auto;
         background-color: white;
-        border: 3 solid black;
     }
 </style>
 </head>
 <body>
     <h1>Geometry Challenge</h1>
-    <canvas id="myCanvas">
+    <canvas id="myCanvas" width="600" height="400">
     </canvas>
 <script>
-var canvas = document.getElementById("myCanvas");
-var ctx = canvas.getContext("2d");
-ctx.fillStyle = "#FF0000";
-ctx.fillRect(50,50,50,50);
+    var canvas = document.getElementById("myCanvas");
+    var ctx = canvas.getContext("2d");
+    var x = 10;
+    var y = 200;
+    var size = 50;
+    ctx.fillStyle = "red";
+    ctx.fillRect(x,y,size,size);
 </script>
 </body>
 </html>
